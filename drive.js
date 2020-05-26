@@ -9,7 +9,7 @@ var player;
 function onYouTubeIframeAPIReady() {
 player = new YT.Player('player', {
   videoId: 'tpPPjtRzX2Q',
-  playerVars: {'start': 30,'origin ':'musicaldrive.herokuapp.com','vq':'hd720' },
+  playerVars: {'start': 30,'origin ':'Musical-Safari.github.com','vq':'hd720' },
   events: {
     'onReady': onPlayerReady,
     'onStateChange': onPlayerStateChange
@@ -326,11 +326,11 @@ let playing = true;
 function playPause() {
     if (playing) {
         song = document.querySelector('#song'),
-        pPause.src = "C:/Web Development/MusicalSafari/Image/pause.png"
+        pPause.src = "http://Musical-Safari.github.com/Image/pause.png"
         song.play();
         playing = false;    
     } else {
-        pPause.src = "C:/Web Development/MusicalSafari/Image/play.png"    
+        pPause.src = "http://Musical-Safari.github.com/Image/play.png"    
         song.pause();
         playing = true;
     }
