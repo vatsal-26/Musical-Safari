@@ -326,11 +326,11 @@ let playing = true;
 function playPause() {
     if (playing) {
         song = document.querySelector('#song'),
-        pPause.src = "http://Musical-Safari.github.com/Image/pause.png"
+        pPause.src = "Image/pause.png"
         song.play();
         playing = false;    
     } else {
-        pPause.src = "http://Musical-Safari.github.com/Image/play.png"    
+        pPause.src = "Image/play.png"    
         song.pause();
         playing = true;
     }
